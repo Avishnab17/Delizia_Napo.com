@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+<head>
+      <title>Delizia_Napo</title>
+      <meta charset="=utf-8">
+		<meta name="viewport" content="width=device-width, initial_scale=1">
+
+        <!--Bootstrap CDN-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+        <!--Google fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+        <!--FontAwesome CDN-->
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+      <link rel="stylesheet" type="text/css" href="style.css"> <!--to link css file with html file -->
+</head>
+<body>
+		<div id="main">
+			<nav>
+			<img src="logo.png" width="300" height="300">			
+			<ul> <!--unodered list-->
+				<li class="active"><a href="#">Home</a></li> <!-- The # is used so that when we we click on the link it will not redirect on anotherlink-->
+				<li><a href="#">List of posts</a></li> 
+				<li><a href="#">Gallery</a></li> 
+                        <li><a href="#">Site map</a></li>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Contact us</a></li>
+				<li><a href="#">Joining Club</a></li> 
+			</ul>
+			</nav>
+		<section class="blog-py-5">
+			<div class="container">
+				<div class="heading text-center mb-5">
+					<h1 class="title">NAPOLITAINES FOR ALL OCCASIONS</h1>
+					</div>
+					<div class="row">
+						<div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+							<div class="class_wrap">
+								<div class="bg_effect"></div>
+								<div class="img_box">
+									<img class="img-fluid" src="images\img1.jpg">
+								</div>
+								<div class="content">
+									<h6 class="mt-4">Napo with tea</h6>
+									<p class="text-muted mt-3">Our decadent napo served for tea breaks. 
+									Nothing could be better than a napo and a cup of tea after long hours of work. </p>
+									<div class="d-flex align-items-center justify-content-between mt-3 pb-3">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+							<div class="class_wrap">
+								<div class="bg_effect"></div>
+								<div class="img_box">
+									<img class="img-fluid" src="images\img4.jpg">
+								</div>
+								<div class="content">
+									<h6 class="mt-4">Cioccocioc</h6>
+									<p class="text-muted mt-3">There is no end to creativity. For the chocolate lovers, here is your CIOCCOCIOC napo with chocolate chips!</p>
+									<div class="d-flex align-items-center justify-content-between mt-3 pb-3">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+							<div class="class_wrap">
+								<div class="bg_effect"></div>
+								<div class="img_box">
+									<img class="img-fluid" src="images\img3.jpg">
+								</div>
+								<div class="content">
+									<h6 class="mt-4">Popping colors</h6>
+									<p class="text-muted mt-3">Be inspired to try different icing colors for your delicious napos.</p>
+									<div class="d-flex align-items-center justify-content-between mt-3 pb-3">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+							<div class="class_wrap">
+								<div class="bg_effect"></div>
+								<div class="img_box">
+									<img class="img-fluid" src="images\img2.jpg">
+								</div>
+								<div class="content">
+									<h6 class="mt-4">Christmas Napo</h6>
+									<p class="text-muted mt-3">Bake your Christmas tree napos for Christmas and spread the love with your dear ones.</p>
+									<div class="d-flex align-items-center justify-content-between mt-3 pb-3">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+		</section>
+	</div>
+</body>
+</html>
+
+
+*{ /*universal selector*/
+	margin: 0;
+	padding: 0;
+	font-family: cursive;
+}
+
+/*main div*/
+#main{
+	width:100%;
+	height:250vh;
+	background-image: url(back1.jpg);
+	background-size: cover;
+}
+
+nav{
+	width:100%;
+	height: 80px;
+	background-color: #B03A2E;
+	opacity:0.7;
+	line-height: 80px;
+}
+
+nav ul{
+	float:right ;
+	margin-right: 30px;
+}
+
+nav ul li{
+	list-style-type: none;
+	display: inline-block; /*horizontal display of links*/
+	transition: 0.6s all;
+}
+
+nav ul li:hover{
+	background-color:#7B241C ;
+}
+
+nav ul li a{   
+	text-decoration: none;
+	color: #FADBD8 ;
+	padding: 5px 20px;
+	transition: 0.6s ease;
+}
+
+/*ul{  
+	float:right;
+	list-style-type: none;
+    margin-top: 65px;
+    margin-right: 125px;
+ul li{
+	display:inline-block;
+}
+       
+ul li a{   
+	text-decoration: none;
+	color: #B03A2E ;
+	padding: 5px 20px;
+	border: 1px solid transparent ;
+	transition: 0.6s ease;
+}
+ul li a:hover{   
+	background-color: #B03A2E ;
+	color: #FADBD8 ;
+}
+ul li.active a{
+    background-color: #B03A2E ;
+	color: #FADBD8 ;
+}
+*/
+
+.logo .img{ 
+	float: left;
+	width: 50px;
+	height: auto;
+	margin-top: 60px;
+}
+
+/*.main{
+	max-width: 1200px;
+    margin: auto;
+    */
+.title{
+	position: absolute;
+	top:25%;
+	left: 50%;
+	transform: translate(-50%,-50%);/*left,right*/
+	color:#B03A2E;
+	font-family: revert-layer;
+}
+
+/*
+.title h1{
+	color:#B03A2E;
+    font-size: 35px;
+}
+.card_wrap{
+	padding: 100px 0;
+}
+.service_inner{
+	position: relative;
+	overflow: hidden;
+	z-index: 1;
+	display: flex;
+	flex-direction: column;
+}
+.service_inner .thumbnail{
+	margin-bottom: 45px;
+}
+.service_inner .title{
+	color:#B03A2E;
+	font-family: 'Poppins', sans-serif;
+	font-size:24px;
+	font-weight:600;
+	line-height: 1.2;
+	margin-bottom: 38px;
+}
+.service_inner p{
+	color:#B03A2E;
+	font-size: 17px;
+	font-family: 'Roboto', sans-serif;
+	margin-bottom: 38px;
+}
+*/
+
+p{
+	margin: 0px;
+}
+
+.class_wrap{
+	margin-top: 170px;
+	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.16);
+	background-color: #CCA079;
+	overflow: hidden;
+    transition: 0.5s all ease;
+}
+
+.class_wrap:hover{
+	color: #FADBD8;
+	transform: scale(1.025);
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.24);
+}
+
+.class_wrap .img_box{
+	position: relative;
+}
