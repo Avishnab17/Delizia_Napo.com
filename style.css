@@ -573,12 +573,12 @@ a:hover {
 	margin-top: -800px;
 }
 .contsite img{
-	margin-top: 50px;
-	margin-left: 300px;
+	margin-top: -1000px;
+	margin-left: 30px;
 }
 
 
-/* Contact us*/
+/*------------------ Contact us*/
 .contactus .contact{
 	display: flex;
 	flex-direction: column;
@@ -608,7 +608,7 @@ a:hover {
 	border-bottom: 3px solid #B03A2E;
 	padding-bottom: 10px;
 	color: #B03A2E;
-	margin-top: -180px;
+	margin-top: -500px;
 }
 
 .contactus .contact .headergal h1 span{
@@ -620,18 +620,16 @@ a:hover {
 
   
   .contactus .contact img{
-	  margin-top:-100px;
+	  margin-top:-400px;
 	  margin-left: -700px;
 	  padding: 0px;
   }
 
   .contact .position .location img{
-
+	margin-top: 20px;
 	width: 10%;
-	margin-left: 80px;
+	margin-left: -20px;
 	
-
-
   }
 
 

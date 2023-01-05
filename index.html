@@ -210,112 +210,6 @@
 </section>
 
 		
-<!--- Joining us page --->
-<section class="joinus" id="joinus">	
-		<div class="w3-light-grey w3-padding-large w3-padding-32 w3-margin-top">
-			<!--- <div class="Joining">   --->
-				<div class="joining">
-					<div class="form-box">
-						<div class="button-box">
-							<div id="btn"></div>
-							<button type="button" class="toggle-btn" onclick="login()">Log In</button>
-								<button type="button" class="toggle-btn" onclick="register()">Register</button>
-							</div>
-			
-							<div class="social-icons">
-							<img src="Images/gp1.png">
-								   <img src="Images/insta1.png">
-							  <img src="Images/fb4.png">
-						  </div>
-		
-						   <form id="login" class="input-group">
-								<input type="text" class="input-field" placeholder="User ID" required>
-								 <input type="text" class="input-field" placeholder="Enter Password" required>
-							  <input type="checkbox" class="check-log-box"><span-log>Remember Password</span-log>
-							 <button type="submit" class="log-btn">Log in</button>
-							  </form>
-		
-							   <form id="register" class="input-group">
-									<input type="text" class="input-field" placeholder="Name"  required>
-							 <input type="email" class="input-field" placeholder="Age" required>
-							 <input type="email" class="input-field" placeholder="Email" required>
-		
-							 <div class="radio-btn">
-								 <br>
-								 <p>Select your gender:</p>
-		 				 	<input type="radio" id="Male" name="fav_language" value="Male">
-		 					 <label for="Male">Male</label><br>
-		 				 	<input type="radio" id="Female" name="fav_language" value="Female">
-		 				 	<label for="Female">CSS</label><br>
-		 				 	<input type="radio" id="Other" name="fav_language" value="Other">
-		 				 	<label for="Other">Not Specified</label>
-		
-								  <br> 
-							  </div>
-		
-							 <input type="text" class="input-field" placeholder="Phone Number" required>
-							  <input type="text" class="input-field" placeholder="Enter Password" required>
-		
-								  <input type="checkbox" class="check-register-box"><span-register>I agree to the terms and conditions</span-register>
-								   </form>
-		
-				
-					   </div>  
-		
-						<div class="exp-box">
-							  <div class="dropdown">
-								  <br>
-								   <label for="Explevel">Select your experience level:</label>
-								 <select name="Explevel" id="Explevel">
-									  <option value="Beginner">Beginner</option>
-									 <option value="Average">Average</option>
-									 <option value="Expert">Expert</option>
-									 </select>
-									 <br><br>
-								  </div>
-								  <!--<p><label for="w3review">Describe your baking experience: </label></p> --->
-								  <p><label for="w3review">Describe your baking experience: </label></p>
-							<textarea id="w3review" name="w3review" rows="6" cols="45"></textarea>
-		
-								  <br>
-		
-							</div>
-		
-							<div class="nextback">
-								<a href="#" class="previous">&laquo; Previous</a>
-					   			<a href="#" class="next">Next &raquo;</a>
-		
-							</div>
-		
-							
-			
-				   </div>
-		
-				  <script>
-		
-					  var x = document.getElementById("login");
-					 var y = document.getElementById("register");
-					 var z = document.getElementById("btn");
-		
-					 function register(argument) {
-						 x.style.left="-400px"
-						y.style.left="50px"
-						z.style.left="110px"
-					  }
-		
-					 function login(argument) {
-						x.style.left="50px"
-						y.style.left="450px"
-						z.style.left="0px"
-					  }
-		
-				</script>		
-		
-			</div>			
-		</div>
-	</section>	
-
-
 	<section class="contactus" id="contactus">	
 			<div class="contact">
 
@@ -357,11 +251,113 @@
 				</div>
 
 			</div>
-
-
-		
 			
- </section>
+	</section>
+
+	<!--- Joining us page --->
+<section class="joinus" id="joinus">	
+	<div class="w3-light-grey w3-padding-large w3-padding-32 w3-margin-top">
+		<!--- <div class="Joining">   --->
+			<div class="joining">
+				<div class="form-box">
+					<div class="button-box">
+						<div id="btn"></div>
+						<button type="button" class="toggle-btn" onclick="login()">Log In</button>
+							<button type="button" class="toggle-btn" onclick="register()">Register</button>
+						</div>
+		
+						<div class="social-icons">
+						<img src="Images/gp1.png">
+							   <img src="Images/insta1.png">
+						  <img src="Images/fb4.png">
+					  </div>
+	
+					   <form id="login" class="input-group">
+							<input type="text" class="input-field" placeholder="User ID" required>
+							 <input type="text" class="input-field" placeholder="Enter Password" required>
+						  <input type="checkbox" class="check-log-box"><span-log>Remember Password</span-log>
+						 <button type="submit" class="log-btn">Log in</button>
+						  </form>
+	
+						   <form id="register" class="input-group">
+								<input type="text" class="input-field" placeholder="Name"  required>
+						 <input type="email" class="input-field" placeholder="Age" required>
+						 <input type="email" class="input-field" placeholder="Email" required>
+	
+						 <div class="radio-btn">
+							 <br>
+							 <p>Select your gender:</p>
+	 				 	<input type="radio" id="Male" name="fav_language" value="Male">
+	 					 <label for="Male">Male</label><br>
+	 				 	<input type="radio" id="Female" name="fav_language" value="Female">
+	 				 	<label for="Female">CSS</label><br>
+	 				 	<input type="radio" id="Other" name="fav_language" value="Other">
+	 				 	<label for="Other">Not Specified</label>
+	
+							  <br> 
+						  </div>
+	
+						 <input type="text" class="input-field" placeholder="Phone Number" required>
+						  <input type="text" class="input-field" placeholder="Enter Password" required>
+	
+							  <input type="checkbox" class="check-register-box"><span-register>I agree to the terms and conditions</span-register>
+							   </form>
+	
+			
+				   </div>  
+	
+					<div class="exp-box">
+						  <div class="dropdown">
+							  <br>
+							   <label for="Explevel">Select your experience level:</label>
+							 <select name="Explevel" id="Explevel">
+								  <option value="Beginner">Beginner</option>
+								 <option value="Average">Average</option>
+								 <option value="Expert">Expert</option>
+								 </select>
+								 <br><br>
+							  </div>
+							  <!--<p><label for="w3review">Describe your baking experience: </label></p> --->
+							  <p><label for="w3review">Describe your baking experience: </label></p>
+						<textarea id="w3review" name="w3review" rows="6" cols="45"></textarea>
+	
+							  <br>
+	
+						</div>
+	
+						<div class="nextback">
+							<a href="#" class="previous">&laquo; Previous</a>
+							   <a href="#" class="next">Next &raquo;</a>
+	
+						</div>
+	
+						
+		
+			   </div>
+	
+			  <script>
+	
+				  var x = document.getElementById("login");
+				 var y = document.getElementById("register");
+				 var z = document.getElementById("btn");
+	
+				 function register(argument) {
+					 x.style.left="-400px"
+					y.style.left="50px"
+					z.style.left="110px"
+				  }
+	
+				 function login(argument) {
+					x.style.left="50px"
+					y.style.left="450px"
+					z.style.left="0px"
+				  }
+	
+			</script>		
+	
+		</div>			
+	</div>
+</section>	
 
 
 
