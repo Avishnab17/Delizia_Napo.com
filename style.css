@@ -5,8 +5,9 @@
 }
 
 body{
-	background-image: url(images/back1.jpg);
-	background-size: 1900px;
+	background-image: url(images/viback.png);
+	background-size: 1370px;
+	background-position: center;
 }
 section{
 	padding:20rem 5%;
@@ -133,18 +134,7 @@ section{
 	margin-top: -350px;
 }
 
-.aboutus .about-section h1{
-    margin-top:-175px;
-    color:#B03A2E;
-}
 
-.aboutus .about-section h5{
-    color:#6B1300;
-}
-
-.aboutus .about-section h6{
-    color:#6B1300;
-}
 
 /*vaish*/
  .cont1 { 
@@ -201,7 +191,7 @@ section{
  .cont2 { 
  	width:80vmin;
  	height: 400px;
- 	margin-left: 310px;
+ 	margin-left: 500px;
  	transform: translate(-50%,  -50%);
     margin-top:220px;
  	overflow:hidden;
@@ -215,8 +205,42 @@ footer{
 	color: #B03A2E;
 }
 
+.aboutus .about{
+	margin-left: 110px;
+    margin-top: -700px;
+}
+.aboutus .about h5{
+    color:#6B1300;
+}
 
-
+.aboutus .about h6{
+    color:#6B1300;
+}
+.aboutus .about-section{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	margin: 40px 20px 0 20px;
+}
+.aboutus .about-section .headergal{
+	width:50%;
+	padding-bottom: 50px;
+}
+.aboutus .about-section .headergal h1{
+	font-size: 3em;
+	font-weight: bolder;
+	border-bottom: 3px solid #B03A2E;
+	padding-bottom: 10px;
+	color: #B03A2E;
+	margin-top: -800px;
+}
+.aboutus .about-section .headergal h1 span{
+	font-weight: 10;
+	color: #B03A2E;
+	margin-top: -250px;
+}
 .joining{
 	height: 110%;
 	width: 100%;
@@ -528,9 +552,25 @@ a:hover {
 }
 
 /*--- formatting for section "sitemap"----*/
-.sitemap .site-map h1{
-	margin-top:-700px;
-	color:#B03A2E;
+.sitemap .site-map{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	margin: 40px 20px 0 20px;
+}
+.sitemap .site-map .headergal{
+	width:50%;
+	padding-bottom: 50px;
+}
+.sitemap .site-map .headergal h1{
+	font-size: 3em;
+	font-weight: bolder;
+	border-bottom: 3px solid #B03A2E;
+	padding-bottom: 10px;
+	color: #B03A2E;
+	margin-top: -800px;
 }
 .contsite img{
 	margin-top: 50px;
@@ -593,3 +633,6 @@ a:hover {
 
 
   }
+	margin-top: -1000px;
+	margin-left: 40px;
+}
