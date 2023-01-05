@@ -1,4 +1,4 @@
-{ /*universal selector*/
+*{ /*universal selector*/
 	margin: 0;
 	padding: 0;
 	font-family: cursive;
@@ -152,7 +152,7 @@ section{
  	height: 550px;
  	margin-left: 310px;
  	transform: translate(-50%,  -50%);
-    margin-top:-10px;
+    margin-top:-5px;
  	left: 1000px;
  	overflow:hidden;
  	border: 5px solid #ffffff;
@@ -209,3 +209,8 @@ section{
  	box-shadow: 30px 25px 30px rgba(30,40,200,0.3);
 
  }
+
+footer{
+	margin-top: -280px;
+	color: #B03A2E;
+}
