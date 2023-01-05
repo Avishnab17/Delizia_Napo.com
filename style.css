@@ -477,18 +477,7 @@ span-register{
 }
 
 
-/*back and next button */
-a {
-  text-decoration: none;
-  display: flow;
-  padding: 16px 32px;
 
-}
-
-a:hover {
-  background-color: #FDEEE7;
-  color: #B03A2E;
-}
 
 
 .dropdown{

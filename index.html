@@ -307,7 +307,7 @@
 
 					<div class="location">
 						<a href="https://goo.gl/maps/qb8e2FSExU6ju84z9"> 
-							<img src="images/fb4.png" style="width:42px;height:42px;">
+							<img src="images/locationlogo.png" style="width:42px;height:42px;">
 						</a>
 					</div>
 				 	<div class="address_details">
@@ -364,68 +364,71 @@
 		<!--- <div class="Joining">   --->
 			<div class="joining">
 				<div class="form-box">
+
 					<div class="button-box">
+
 						<div id="btn"></div>
 						<button type="button" class="toggle-btn" onclick="login()">Log In</button>
 							<button type="button" class="toggle-btn" onclick="register()">Register</button>
-						</div>
+					</div>
 		
-						<div class="social-icons">
+					<div class="social-icons">
 						<img src="Images/gp1.png">
-							   <img src="Images/insta1.png">
-						  <img src="Images/fb4.png">
-					  </div>
+						<img src="Images/insta1.png">
+						<img src="Images/fb4.png">
+					</div>
+
+					<form id="login" class="input-group">
+						<input type="text" class="input-field" placeholder="User ID" required>
+						<input type="text" class="input-field" placeholder="Enter Password" required>
+						<input type="checkbox" class="check-log-box"><span-log>Remember Password</span-log>
+						<button type="submit" class="log-btn">Log in</button>
+					</form>
 	
-					   <form id="login" class="input-group">
-							<input type="text" class="input-field" placeholder="User ID" required>
-							 <input type="text" class="input-field" placeholder="Enter Password" required>
-						  <input type="checkbox" class="check-log-box"><span-log>Remember Password</span-log>
-						 <button type="submit" class="log-btn">Log in</button>
-						  </form>
-	
-						   <form id="register" class="input-group">
-								<input type="text" class="input-field" placeholder="Name"  required>
-						 <input type="email" class="input-field" placeholder="Age" required>
-						 <input type="email" class="input-field" placeholder="Email" required>
-	
-						 <div class="radio-btn">
-							 <br>
-							 <p>Select your gender:</p>
-	 				 	<input type="radio" id="Male" name="fav_language" value="Male">
-	 					 <label for="Male">Male</label><br>
-	 				 	<input type="radio" id="Female" name="fav_language" value="Female">
-	 				 	<label for="Female">CSS</label><br>
-	 				 	<input type="radio" id="Other" name="fav_language" value="Other">
-	 				 	<label for="Other">Not Specified</label>
-	
-							  <br> 
-						  </div>
-	
-						 <input type="text" class="input-field" placeholder="Phone Number" required>
-						  <input type="text" class="input-field" placeholder="Enter Password" required>
-	
-							  <input type="checkbox" class="check-register-box"><span-register>I agree to the terms and conditions</span-register>
-							   </form>
+					<form id="register" class="input-group">
+						<input type="text" class="input-field" placeholder="Name"  required>
+						<input type="email" class="input-field" placeholder="Age" required>
+						<input type="email" class="input-field" placeholder="Email" required>
+
+						<div class="radio-btn">
+							<br>
+							<p>Select your gender:</p>
+	 				 		<input type="radio" id="Male" name="fav_language" value="Male">
+	 						<label for="Male">Male</label><br>
+	 				 		<input type="radio" id="Female" name="fav_language" value="Female">
+	 				 		<label for="Female">CSS</label><br>
+	 				 		<input type="radio" id="Other" name="fav_language" value="Other">
+	 				 		<label for="Other">Not Specified</label><br> 
+						</div>
+
+						<input type="text" class="input-field" placeholder="Phone Number" required>
+						<input type="text" class="input-field" placeholder="Enter Password" required>
+						<input type="checkbox" class="check-register-box"><span-register>I agree to the terms and conditions</span-register>
+					</form>
 	
 			
-				   </div>  
-	
-					<div class="exp-box">
-						  <div class="dropdown">
-							  <br>
-							   <label for="Explevel">Select your experience level:</label>
-							 <select name="Explevel" id="Explevel">
-								  <option value="Beginner">Beginner</option>
-								 <option value="Average">Average</option>
-								 <option value="Expert">Expert</option>
-								 </select>
-								 <br><br>
-							  </div>
+				</div>  
+
+				<div class="exp-box">
+					<div class="dropdown"><br>
+						<label for="Explevel">Select your experience level:</label>
+						<select name="Explevel" id="Explevel">
+							<option value="Beginner">Beginner</option>
+							<option value="Average">Average</option>
+							<option value="Expert">Expert</option>
+							</select><br><br>
+
+					</div>
 							  <!--<p><label for="w3review">Describe your baking experience: </label></p> --->
 							  <p><label for="w3review">Describe your baking experience: </label></p>
-						<textarea id="w3review" name="w3review" rows="6" cols="45"></textarea>
+
+							  <form action="/action_page.php" method="get" id="nameform">
+								<textarea id="w3review" name="w3review" rows="6" cols="45"></textarea>
+							  </form>
+						
 	
-							  <br>
+							  
+							  <button type="submit" form="nameform" value="Submit">Submit</button>
 	
 						</div>
 					
