@@ -279,6 +279,39 @@ footer{
 	color: #B03A2E;
 	margin-top: -250px;
 }
+
+/*-------Joining us----------*/
+
+.joinus .contact-section{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	margin: 40px 20px 0 20px;
+	text-align: center;
+	
+}
+.joinus .contact-section .headergal{
+	width:50%;
+	padding-bottom: 50px;
+}
+.joinus .contact-section .headergal h1{
+	font-size: 3em;
+	font-weight: bolder;
+	border-bottom: 3px solid #B03A2E;
+	padding-bottom: 10px;
+	color: #B03A2E;
+	margin-top: -280px;
+}
+.joinus .contact-section .headergal h1 span{
+	font-weight: 10;
+	color: #B03A2E;
+	margin-top: -250px;
+}
+
+
+
 .joining{
 	height: 110%;
 	width: 100%;
@@ -295,7 +328,7 @@ footer{
 	position: relative;
 	margin: 6% auto;
     margin-left: 135px;
-    margin-top: -130px;
+    margin-top: -200px;
 	background:#DFBEA0;
 	padding: 5px;
 	overflow: hidden;  /*-- hide register or login */
