@@ -87,8 +87,45 @@ section{
 	font-family: cursive;
 }
 
+.breadcrumbs ul svg{
+	width: 20px;
+	vertical-align: middle;
+}
+
+.breadcrumbs{
+	font-family:sans-serif;
+	padding: 10px 48px;
+	box-shadow: 0 4px 10 px - 10 px rgpa(0,0,0,0.2);
+	width:fit-content;
+} 
+
+.breadcrumbs ul{
+	display: flex;
+	list-style: none;
+	padding: 0px;
+	margin-top: -230px;
+	margin-left: 100px;
+}
+
+.breadcrumbs ul li a{
+	text-decoration: none;
+	color: #3F0B00;
+}
+
+.breadcrumbs ul li a:hover{
+	color: #CCA079;
+}
+
+.breadcrumbs ul li:last-child a{
+	font-weight: bold;
+}
+
+.breadcrumbs ul li.arrow svg{
+	width:18px;
+}
+
 .class_wrap{
-	margin-top: 170px;
+	margin-top: 200px;
 	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.16);
 	background-color: #CCA079;
 	overflow: hidden;
