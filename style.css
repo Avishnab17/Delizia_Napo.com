@@ -214,3 +214,266 @@ footer{
 	margin-top: -280px;
 	color: #B03A2E;
 }
+
+
+
+.hero{
+	height: 110%;
+	width: 100%;
+	background-image: url(Images/background.png);
+	background-position: center;
+	background-size: cover;
+	position: absolute;
+	color:#232d60;
+}
+
+.form-box{
+	width: 400px;
+	height: 560px;
+	position: relative;
+	margin: 6% auto;
+    margin-left: 125px;
+    margin-top: 150px;
+	background:#DFBEA0;
+	padding: 5px;
+	overflow: hidden; <!--- hide register or login--->
+
+}
+
+
+.exp-box{
+	width: 500px;
+	height: 300px;
+	border-radius: 4px;
+	position: relative;
+	bottom: 600px;
+	left: 675px;
+	background:#DFBEA0;
+	padding: 5px;
+	overflow: hidden; <!--- hide register or login--->
+
+
+}
+
+p{
+	color: grey;
+}
+
+textarea{
+	margin-left: 20px;
+}
+
+/* log in register box la haut la*/
+.button-box{
+	width: 220px;
+	margin: 35px auto;
+	position: relative;
+	border-radius: 30px;
+
+}
+
+/* log in register box - kan li bouger*/
+.toggle-btn{
+	padding: 5px 20px;
+	cursor: pointer;
+	background: transparent;
+  	
+	border: 0;
+	outline: none;
+	position: relative;
+	color: #B03A2E;
+	font-size: 18px;
+	font-family: cursive;
+}
+ 
+ /* log in register la haut la*/
+#btn{
+	top: 0;
+	left: 0;
+	position: absolute;
+	width: 100px;
+	height: 100%;
+	background: #F2D5BA; 
+	border-radius: 30px;
+	transition: .5s;
+}
+
+
+.social-icons{
+	margin: 30px auto;
+	text-align: center;
+}
+
+.social-icons img{
+	width: 30px;
+	margin: 0 12px;
+	box-shadow: 0 0 20px 0 #7f7f7f3d;
+	cursor: pointer;
+	border-radius: 50%;
+}
+
+
+.input-group{
+	top: 150px;
+	position: absolute;
+	width: 280px;
+	transition: .5s;
+
+}
+
+
+
+.input-field{
+	width: 110%;
+	padding: 10px 0;
+	border-left: 0;
+	border-top: 0;
+	border-right: 0;
+	border-bottom: 1px solid #999;
+	outline: none;
+	background: transparent;
+  
+}
+
+/*--- below log-in botton*/
+.log-btn{
+	width: 50%;
+	padding: 5px 20px;
+	cursor: pointer;
+	display: block;
+    margin-top: 30%;
+    position: relative;
+	background: #F2D5BA;
+	border: 0;
+	outline: none;
+	left: 50px;
+	color: #B03A2E;
+	font-size: 20px;
+	font-family: cursive;
+
+}
+
+.register-btn{
+	width: 50%;
+	padding: 5px 20px;
+	cursor: pointer;
+	display: block;
+    margin-top: 10%;
+    position: relative;
+	background: #F2D5BA;
+	border: 0;
+	bottom: -10px;
+	outline: none;
+	left: 50px;
+	color: #B03A2E;
+	font-size: 20px;
+	font-family: cursive;
+
+}
+
+.check-log-box{
+
+	margin: -25px 10px 30px 0;
+}
+
+.check-register-box{
+
+	margin: 20px 10px 30px 0;
+}
+
+span-log{
+	
+	left: 25px;
+	top: 115px;
+	color: #777;
+	font-size: 14px;
+	font-family: sans-serif;
+	bottom: 120px;
+	position: absolute;
+
+}
+
+span-register{
+	
+	left: 25px;
+    top: 372px;
+	color: #777;
+	font-size: 14px;
+	font-family: sans-serif;
+	bottom: 35px;
+	position: absolute;
+
+}
+
+#login{
+	left: 50px;
+}
+
+
+#register{
+	left: 450px;
+}
+
+
+/*back and next button */
+a {
+  text-decoration: none;
+  display: flow;
+  padding: 16px 32px;
+
+}
+
+a:hover {
+  background-color: #FDEEE7;
+  color: #B03A2E;
+}
+
+
+
+.previous {
+  
+    background: #F2D5BA;
+    font-family: cursive;
+    font-size: 20px;
+    border-radius: 4px;
+    color: #B03A2E;
+    padding: 8px;
+    margin: 16px;
+    text-decoration: none;
+    
+    
+
+ 
+}
+
+.next {
+
+    background: #F2D5BA;
+    font-family: cursive;
+    font-size: 20px;
+    border-radius: 4px;
+    color: #B03A2E;
+    padding: 8px;
+    margin: 16px;
+    text-decoration: none;
+    
+
+}
+
+
+.dropdown{
+	color:grey;
+}
+
+
+.radio-btn{
+	color: grey;
+	font-family: sans-serif;
+	font-size: 15px;
+}
+
+.nextback{
+	margin-top: -330px;
+	
+
+}
