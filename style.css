@@ -5,8 +5,9 @@
 }
 
 body{
-	background-image: url(images/back1.jpg);
-	background-size: 1900px;
+	background-image: url(images/viback.png);
+	background-size: 1370px;
+	background-position: center;
 }
 section{
 	padding:20rem 5%;
