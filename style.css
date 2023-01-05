@@ -490,38 +490,6 @@ a:hover {
 }
 
 
-
-.previous {
-  
-    background: #F2D5BA;
-    font-family: cursive;
-    font-size: 20px;
-    border-radius: 4px;
-    color: #B03A2E;
-    padding: 8px;
-    margin: 16px;
-    text-decoration: none;
-    
-    
-
- 
-}
-
-.next {
-
-    background: #F2D5BA;
-    font-family: cursive;
-    font-size: 20px;
-    border-radius: 4px;
-    color: #B03A2E;
-    padding: 8px;
-    margin: 16px;
-    text-decoration: none;
-    
-
-}
-
-
 .dropdown{
 	color:grey;
 }
@@ -646,6 +614,7 @@ a:hover {
 	padding-bottom: 10px;
 	color: #B03A2E;
 	margin-top: -500px;
+	text-align: center;
 }
 
 .contactus .contact .headergal h1 span{
