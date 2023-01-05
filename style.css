@@ -217,7 +217,7 @@ footer{
 
 
 
-.hero{
+.joining{
 	height: 110%;
 	width: 100%;
 	background-image: url(Images/background.png);
@@ -232,8 +232,8 @@ footer{
 	height: 560px;
 	position: relative;
 	margin: 6% auto;
-    margin-left: 125px;
-    margin-top: 150px;
+    margin-left: 135px;
+    margin-top: -130px;
 	background:#DFBEA0;
 	padding: 5px;
 	overflow: hidden; <!--- hide register or login--->
@@ -473,7 +473,9 @@ a:hover {
 }
 
 .nextback{
-	margin-top: -330px;
+	margin-top: -350px;
 	
 
 }
+
+
