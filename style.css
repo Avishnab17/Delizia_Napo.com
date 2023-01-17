@@ -372,7 +372,7 @@ footer{
 	overflow: hidden; /*-- hide register or login */
 }
 
-/* log in register box la haut la*/
+/* log in register box  found at the top*/
 .joinus .joining .form-box .button-box{
 	width: 220px;
 	margin: 25px auto;
@@ -380,7 +380,7 @@ footer{
 	border-radius: 30px;
 }
 
-/* log in register box - kan li bouger*/
+/* log in register box - when it moves*/
 .joinus .joining .form-box .button-box .toggle-btn{
 	padding: 5px 20px;
 	cursor: pointer;
