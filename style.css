@@ -25,6 +25,7 @@ body{
     display:flex;
     align-items:center;	
 	padding-right: 200px;
+	margin-left: 200px; /* Add this line to move the images to the right */
 	
 }
 
