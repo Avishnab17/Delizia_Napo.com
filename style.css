@@ -23,6 +23,7 @@ body{
     height: 150px;
     bottom:10px;
     display:flex;
+
     align-items:center;	
 	padding-right: 30px;
 }
@@ -92,7 +93,12 @@ section{
 	padding: 5px 20px;
 	transition: 0.6s ease;
 }
-
+.navigationbar{
+	display:flex;
+}
+.navigationbar li{
+	position: relative;
+}
 .header .navigationbar a:hover{
 	color:#3F0B00 ;
 	border-bottom: .1rem solid #6B1300;
@@ -302,9 +308,11 @@ section{
     padding-bottom: 165px;
     border-radius: 5px;
     margin-top: -150px;
+	object-fit: cover;
 }
-
-
+.napogal{
+	position: relative;
+}
 /*-------------------------------About us-----------------------------*/
  .cont2 { 
  	width:80vmin;
