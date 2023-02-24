@@ -215,6 +215,55 @@ section{
  	}
  }
 
+ .cont3{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	margin: 40px 20px 0 20px;
+}
+
+.cont3 .headergal{
+	width:50%;
+	padding-bottom: 50px;
+}
+
+.cont3 .headergal h1{
+	font-size: 3em;
+	font-weight: bolder;
+	border-bottom: 3px solid #B03A2E;
+	padding-bottom: 10px;
+	color: #B03A2E;
+	margin-top: -250px;
+}
+
+.cont3 .headergal h1 span{
+	font-weight: 10;
+	color: #B03A2E;
+	margin-top: -250px;
+}
+
+.cont3 .box{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.cont3 .box .napogal{
+	display:flex;
+    flex-direction: column;
+    width: 32.5%;
+}
+
+.cont3 .box .napogal img{	
+    width: 100%;
+    padding-bottom: 165px;
+    border-radius: 5px;
+    margin-top: -150px;
+}
+
+
 /*-------------------------------About us-----------------------------*/
  .cont2 { 
  	width:80vmin;
@@ -323,7 +372,7 @@ footer{
 	overflow: hidden; /*-- hide register or login */
 }
 
-/* log in register box la haut la*/
+/* log in register box  found at the top*/
 .joinus .joining .form-box .button-box{
 	width: 220px;
 	margin: 25px auto;
@@ -331,7 +380,7 @@ footer{
 	border-radius: 30px;
 }
 
-/* log in register box - kan li bouger*/
+/* log in register box - when it moves*/
 .joinus .joining .form-box .button-box .toggle-btn{
 	padding: 5px 20px;
 	cursor: pointer;
@@ -453,7 +502,7 @@ textarea{
 }
 
  /* log in register la haut la*/
-#btn{
+.joinus .joining .form-box .button-box #btn{
 	top: 0;
 	left: 0;
 	position: absolute;
@@ -485,60 +534,12 @@ span-register{
 	position: absolute;
 }
 
-#login{
+.joinus .joining .form-box #login{
 	left: 50px;
 }
 
-#register{
+.joinus .joining .form-box #register{
 	left: 450px;
-}
-
-.cont3{
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
-	margin: 40px 20px 0 20px;
-}
-
-.cont3 .headergal{
-	width:50%;
-	padding-bottom: 50px;
-}
-
-.cont3 .headergal h1{
-	font-size: 3em;
-	font-weight: bolder;
-	border-bottom: 3px solid #B03A2E;
-	padding-bottom: 10px;
-	color: #B03A2E;
-	margin-top: -250px;
-}
-
-.cont3 .headergal h1 span{
-	font-weight: 10;
-	color: #B03A2E;
-	margin-top: -250px;
-}
-
-.cont3 .box{
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-}
-
-.cont3 .box .napogal{
-	display:flex;
-    flex-direction: column;
-    width: 32.5%;
-}
-
-.cont3 .box .napogal img{	
-    width: 100%;
-    padding-bottom: 165px;
-    border-radius: 5px;
-    margin-top: -150px;
 }
 
 /*--- ----------------------- Sitemap   ------------------------------*/
@@ -606,8 +607,6 @@ span-register{
 	color: #B03A2E;
 	margin-top: -250px;
 }
-
-
   
 .contactus .contact img{
 	  margin-top:-500px;
@@ -621,4 +620,4 @@ span-register{
 	margin-left: -20px;
 	
 }
-/*-------------------------------------------*/
+
