@@ -387,22 +387,22 @@
 						<img src="Images/fb4.png">
 					</div>
 					<form id="login" class="input-group">
-						<input type="text" class="input-field" placeholder="User ID" required>
+						<input type="text"  class="input-field" placeholder="User ID" required>
 						<input type="password" class="input-field" placeholder="Enter Password" required>
 						<input type="checkbox" class="check-log-box"><span-log>Remember Password</span-log>
 						<button type="submit" class="log-btn">Log in</button>
 					</form>
-					<form id="register" class="input-group">
+					<form id="register" class="input-group" action="save-email.php" method="POST" target="hidden_iframe">
 						<input type="text" class="input-field" placeholder="Name"  required>
 						<input type="number" class="input-field" placeholder="Age" required>
 						
 						<label class="emailBox">
-							<input type="email" class="input-field" id="email" placeholder="Email" required>
+							<input type="email" name="email" class="input-field" id="email" placeholder="Email" required>
 							<span class="emailText"></span>
 					    </label>
 
 					    <label class="passBox">
-							<input type="password" class="input-field" id="password" placeholder="password">
+							<input type="password" name="password"class="input-field" id="password" placeholder="password">
 							<span class="passText"></span>
 					    </label>
 
@@ -496,7 +496,6 @@
 					  }
 				});
 		  </script>
-	
 
 
 
