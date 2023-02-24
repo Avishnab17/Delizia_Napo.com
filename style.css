@@ -741,5 +741,42 @@ span-register{
 		bottom: -10px; /*-- Adjust this value as needed --*/
 		margin-left:-700px
 	  }
+	
+
+}
+
+@media(max-width:1100px)
+{
+	.contactus .contact {
+		flex-direction: column;
+		margin: 20px;
+	}
+	
+	.contactus .contact .position {
+		margin-left: 0;
+		margin-top: 20px;
+	}
+	
+	.contactus .contact .headergal {
+		width: 80%;
+		padding-bottom: 30px;
+	}
+	
+	.contactus .contact .headergal h1 {
+		font-size: 2em;
+		margin-top: 20px;
+	}
+	
+	.contactus .contact img {
+		margin-top: 20px;
+		margin-left: 0;
+	}
+	
+	.contact .position .location img {
+		margin-top: 20px;
+		width: 20%;
+		margin-left: 0;
+	}
+
 
 }
