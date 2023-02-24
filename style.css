@@ -222,9 +222,7 @@ section{
     margin-top:-5px;
  	left: 1000px;
  	overflow:hidden;
- 	border: 5px solid #ffffff;
- 	border-radius: 8px;
- 	box-shadow: 30px 25px 30px rgba(30,40,200,0.3);
+
 
  }
  .wrapper{
@@ -712,7 +710,6 @@ span-register{
 .joining .form-box #register label.invalid::before{
 	background: url(images/error.png)no-repeat center /cover;
 }
-
 
 @media (max-width: 768px) {
     .cont3 .box {
