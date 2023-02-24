@@ -485,7 +485,17 @@
 					<form id="register" class="input-group">
 						<input type="text" class="input-field" placeholder="Name"  required>
 						<input type="number" class="input-field" placeholder="Age" required>
-						<input type="email" class="input-field" placeholder="Email" required>
+						
+						<label class="emailBox">
+							<input type="email" class="input-field" id="email" placeholder="Email" required>
+							<span class="emailText"></span>
+					    </label>
+
+					    <label class="passBox">
+							<input type="password" class="input-field" id="password" placeholder="password">
+							<span class="passText"></span>
+					    </label>
+
 						<div class="radio-btn">
 						<br>
 							<p>Select your gender:</p>
@@ -497,12 +507,13 @@
 					 		<label for="Other">Not Specified</label><br> 
 						</div>
 						<input type="number" class="input-field" placeholder="Phone Number" required>
-						<input type="password" class="input-field" placeholder="Enter Password" required>
+						
 						<input type="checkbox" class="check-register-box"><span-register>I agree to the terms and conditions</span-register>
+					
 						<button type="submit" class="register-btn">Register</button>
 					</form>
 				</div>
-				
+	
 				<div class="exp-box">
 					<div class="dropdown"><br>
 						<label for="Explevel">Select your experience level:</label>
@@ -513,7 +524,7 @@
 						</select><br><br>
 					</div>
 					<label for="w3review">Describe your baking experience: </label>
-					<form action="/action_page.php" method="get" id="nameform">
+					<form action="/action_page.php" method="get" id="nameform" >
 						<textarea id="w3review" name="w3review" rows="6" cols="45"></textarea>
 					</form>
 					<button type="submit" form="nameform" value="Submit">Submit</button>
@@ -537,7 +548,48 @@
 					y.style.left="450px"
 					z.style.left="0px"
 				}
-			</script>		
+			</script>	
+			
+			<script>
+				const email = document.getElementById("email");
+				const password = document.getElementById("password");
+	
+				email.addEventListener('input',()=>{
+					  const emailBox = document.querySelector('.emailBox');
+					  const emailText = document.querySelector('.emailText');
+					  const emailPattern = /[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$/;
+	
+					  if(email.value.match(emailPattern)){
+							emailBox.classList.add('valid');
+							emailBox.classList.remove('invalid');
+							emailText.innerHTML = "Your Email Address is Valid"; 
+					  }else{
+							emailBox.classList.add('invalid');
+							emailBox.classList.remove('valid');
+							emailText.innerHTML = "Must be a valid email address."; 
+					  }
+				});
+	
+				password.addEventListener('input',()=>{
+					  const passBox = document.querySelector('.passBox');
+					  const passText = document.querySelector('.passText');
+					  const passPattern = /(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}/;
+	
+					  if(password.value.match(passPattern)){
+							passBox.classList.add('valid');
+							passBox.classList.remove('invalid');
+							passText.innerHTML = "Your Password is Valid"; 
+					  }else{
+							passBox.classList.add('invalid');
+							passBox.classList.remove('valid');
+							passText.innerHTML = "Your password must be at least 6 characters as well as contain at least one uppercase, one lowercase, and one number."; 
+					  }
+				});
+		  </script>
+	
+
+
+
 		</div>
 		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 		<footer>
