@@ -23,9 +23,9 @@ body{
     height: 150px;
     bottom:10px;
     display:flex;
-
     align-items:center;	
-	padding-right: 30px;
+	padding-right: 200px;
+	
 }
 
 .bg-image .bg-change
@@ -46,6 +46,11 @@ body{
     width: 100%;
     height:100%;
     object-fit:cover;
+	
+}
+
+.bg-image .bg-change + .bg-change {
+    margin-left: 10px;
 }
 
 .bg-image .bg-change:hover{
@@ -104,6 +109,12 @@ section{
 	border-bottom: .1rem solid #6B1300;
 	padding-bottom: .5rem;
 }
+
+.home .content {
+	margin-top: 20px;
+	margin-left: 0;
+  }
+  
 
 .home .content h3{
 	margin-left: 620px;
@@ -719,4 +730,6 @@ span-register{
     .cont3 .box .napogal {
         width: 100%;
     }
+	
+
 }
