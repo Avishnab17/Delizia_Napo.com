@@ -19,11 +19,12 @@ body{
 .bg-image{
 
     position:fixed;
-    width:500px;
+    width:600px;
     height: 150px;
     bottom:10px;
     display:flex;
-    align-items:center;
+    align-items:center;	
+	padding-right: 30px;
 }
 
 .bg-image .bg-change
