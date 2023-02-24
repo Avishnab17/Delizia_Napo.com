@@ -731,6 +731,15 @@ span-register{
     .cont3 .box .napogal {
         width: 100%;
     }
+	.joinus .joining .form-box {
+		margin-left: 0;
+		margin-top: 0;
+	  }
 	
+	  .joinus .joining .exp-box {
+		position: relative;
+		bottom: -10px; /*-- Adjust this value as needed --*/
+		margin-left:-700px
+	  }
 
 }
