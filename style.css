@@ -787,4 +787,14 @@ span-register{
 		align-items: center;
 
 	  }
+
+	  .aboutus .about-section .headergal{
+		margin-top: 40px;
+	  }
+
+	  
+	  .aboutus .about-section .headergal h1{
+		margin-bottom: 250px;
+
+	  }
 }
