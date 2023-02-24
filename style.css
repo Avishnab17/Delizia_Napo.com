@@ -422,7 +422,7 @@ footer{
 	border-bottom: 3px solid #B03A2E;
 	padding-bottom: 10px;
 	color: #B03A2E;
-	margin-top: -280px;
+	margin-top: -250px;
 }
 
 .joinus .contact-section .headergal h1 span{
@@ -838,15 +838,5 @@ span-register{
 		position: relative;
 		bottom: -10px; /*-- Adjust this value as needed --*/
 		margin-left:-700px;
-	  }
-
-	  .aboutus .about-section .headergal{
-		margin-top: 40px;
-	  }
-
-	  
-	  .aboutus .about-section .headergal h1{
-		margin-bottom: 250px;
-
 	  }
 }
