@@ -398,7 +398,9 @@
 						<input type="checkbox" class="check-log-box"><span-log>Remember Password</span-log>
 						<button type="submit" class="log-btn">Log in</button>
 					</form>
-					<form id="register" class="input-group"  method="POST">
+
+										  
+					<form onsubmit="return confirmInfo()" id="register" class="input-group"  method="POST">
 						
 						<input type="text" name="name" class="input-field" placeholder="Name" id="name" required>
 
@@ -453,8 +455,25 @@
 					<button type="submit" form="nameform" value="Submit">Submit</button>
 				</div>	
 
-			
+				
+				
+				  
+
+
+				
+				  
 			</div>
+			<script>
+				function confirmInfo() {
+				  var name = document.getElementById("name").value;
+				  var email = document.getElementById("email").value;
+				  var message = "Please confirm your information:\n\nName: " + name + "\nEmail: " + email;
+				  return confirm(message);
+				}
+				</script>
+
+	
+
 			<script>
 				var x = document.getElementById("login");
 				var y = document.getElementById("register");
