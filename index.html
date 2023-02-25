@@ -531,8 +531,10 @@
 				function submitForm() {
 					var name = document.getElementById("name").value;
 					var email = document.getElementById("email").value;
+					var phone_number = document.getElementById("phone_number").value;
+					phone_regex= "[0-9]{3}-[0-9]{3}-[0-9]{4}"
 
-					if (name === "" || email === "") {
+					if (name === "" || email === "" || !phone_regex.test(phone_number)) {
 						alert("Please fill in all fields.");
 						return false;
 					} else {
