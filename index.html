@@ -317,7 +317,9 @@
 						memberItem.innerHTML = members[i].name + " (" + members[i].email + ")";
 						membersList.appendChild(memberItem);
 					}
+
 				}
+				removeMember("Abhi","abhi@gmail.com");
 			</script>
 			
 
@@ -535,11 +537,12 @@
 						return false;
 					} else {
 						confirmInfo();
-                        registerUser();		
+                        registerUser();
 						return true;
 					}
 					
 				}
+				
 				</script>
 
 	
@@ -641,9 +644,32 @@
 				alert("User registered successfully!");
 				saveToFile();
 				}
-				</script>		
+				</script>	
+				
+				<script>
+				function removeMember(name, email) {
+  // Retrieve the current list of members from local storage
+  var members = JSON.parse(localStorage.getItem("members"));
+
+  // Find the index of the member with the matching name and email
+  var index = -1;
+  for (var i = 0; i < members.length; i++) {
+    if (members[i].name === name && members[i].email === email) {
+      index = i;
+      break;
+    }
+  }
+
+  // Remove the member with the matching name and email from the list
+  if (index !== -1) {
+    members.splice(index, 1);
+    localStorage.setItem("members", JSON.stringify(members));
+  }
+}
+				</script>
 			
 		</div>
+		
 		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 		<footer>
 			<p>Delizia_napo delicacy</p>
