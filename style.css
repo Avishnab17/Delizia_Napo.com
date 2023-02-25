@@ -574,7 +574,6 @@ footer{
 	
 }
 
-
 p{
 	color: brown;
 }
@@ -833,12 +832,6 @@ span-log{
 	.joinus .joining .form-box {
 		margin-top:-100px ;
 		margin-left:0;
-	  }
-	
-	  .joinus .joining .exp-box {
-		position: relative;
-		bottom: -10px; /*-- Adjust this value as needed --*/
-		margin-left:-700px;
 	  }
 
 	  .aboutus .about-section .headergal{
