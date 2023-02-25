@@ -422,14 +422,14 @@
 						<div class="radio-btn">
 						<br>
 							<p>Select your gender:</p>
-						 	<input type="radio" id="Male" name="fav_language" value="Male">
+						 	<input type="radio" id="Male" name="gender" value="Male">
 							<label for="Male">Male</label><br>
-							<input type="radio" id="Female" name="fav_language" value="Female">
+							<input type="radio" id="Female" name="gender" value="Female">
 							<label for="Female">Female</label><br>
-					 		<input type="radio" id="Other" name="fav_language" value="Other">
+					 		<input type="radio" id="Other" name="gender" value="Other">
 					 		<label for="Other">Not Specified</label><br> 
 						</div>
-						<input type="number" class="input-field" placeholder="Phone Number" required>
+						<input type="number" name="phone_number" class="input-field" placeholder="Phone Number" required>
 						
 						<input type="checkbox" class="check-register-box"><span-register>I agree to the terms and conditions</span-register>
 					
@@ -466,8 +466,12 @@
 			<script>
 				function confirmInfo() {
 				  var name = document.getElementById("name").value;
+				  var age = document.getElementById("age").value;
 				  var email = document.getElementById("email").value;
-				  var message = "Please confirm your information:\n\nName: " + name + "\nEmail: " + email;
+				  var password = document.getElementById("password").value;
+				  
+
+				  var message = "Please confirm your information:\n\nName: " + name +"\nAge: " +age + "\nEmail: " + email + "\nPassword: " + password;
 				  return confirm(message);
 				}
 				</script>
