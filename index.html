@@ -399,8 +399,10 @@
 						<button type="submit" class="log-btn">Log in</button>
 					</form>
 					<form id="register" class="input-group"  method="POST">
-						<input type="text" class="input-field" placeholder="Name"  required>
-						<input type="number" class="input-field" placeholder="Age" required>
+						
+						<input type="text" name="name" class="input-field" placeholder="Name" id="name" required>
+
+						<input type="number" name="age" class="input-field" placeholder="Age" id="age" required>
 						
 						<label class="emailBox">
 							<input type="email" name="email" class="input-field" id="email" placeholder="Email" required>
@@ -430,6 +432,7 @@
 						<input type="checkbox" class="check-register-box"><span-register>I agree to the terms and conditions</span-register>
 					
 						<button type="submit" class="register-btn">Register</button>
+						<button type="button" onclick="saveToFile()">Save to File</button>
 					</form>
 				</div>
 	
@@ -534,8 +537,6 @@
   						}, 0);
 				}
 		    </script>
-
-
 
 		</div>
 		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
