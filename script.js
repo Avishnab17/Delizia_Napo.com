@@ -27,6 +27,9 @@ function bg2(){
      p.style.color = "#9f00ff";})
      document.querySelectorAll(".headergal h1").forEach(function(p) {
       p.style.borderBottom = "3px solid #9f00ff";});
+      document.querySelectorAll("footer").forEach(function(o) {
+        o.style.backgroundColor = "#d5c2f5";})
+
 
 }
 function bg1(){
@@ -88,5 +91,7 @@ function bg3(){
      p.style.color = "#fddde6";})
      document.querySelectorAll(".headergal h1").forEach(function(p) {
       p.style.borderBottom = "3px solid white";});
+      document.querySelectorAll("footer").forEach(function(o) {
+        o.style.backgroundColor = "#f291b7";})
   
 }
