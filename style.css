@@ -655,11 +655,11 @@ span-register{
 	margin-top: -250px;
 }
 
-.contsite img{
+.contsite img {
 	margin-top: -100px;
 	margin-left: 30px;
-}
-
+	max-width: 100%;
+  }
 /*------------------ Contact us-------------------------------*/
 .contactus .contact{
 	display: flex;
@@ -769,6 +769,10 @@ span-register{
 	margin-top: 200px;
 	margin-left:200px;
 }
+.contsite img {
+    margin-top: -50px;
+    margin-left: 10px;
+  }
 
 
 }
@@ -865,3 +869,10 @@ span-register{
 
 
 }
+
+@media screen and (max-width: 480px) {
+	.contsite img {
+	  margin-top: -30px;
+	  margin-left: 5px;
+	}
+  }
