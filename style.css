@@ -740,7 +740,7 @@ span-register{
 .joining .form-box #register label.invalid::before{
 	background: url(images/error.png)no-repeat center /cover;
 }
-
+/*--------------------------------  RESPONSIVENESS----------------------*/
 @media (max-width: 768px) {
     .cont3 .box {
         flex-direction: column;
@@ -757,9 +757,24 @@ span-register{
 	font-size: 13px;
    }
 
+   .aboutus .about-section {
+	margin: 20px;
+}
+.cont2 {
+	width: 90vw;
+	height: 300px;
+	margin-top: 40%;
+	margin-left:490px;
+}
 
 }
 
+
+@media screen and (max-width: 480px) {
+    .aboutus .about-section {
+        margin: 10px;
+    }
+}
 @media (max-width: 1180px) {
 	.cont3 .box {
 	  flex-direction: column;
@@ -831,7 +846,7 @@ span-register{
 	
 	.joinus .joining .form-box {
 		margin-top:-100px ;
-		margin-left:0;
+	    margin-left:40px;
 	  }
 	
 	  .joinus .joining .exp-box {
@@ -850,5 +865,11 @@ span-register{
 
 	  }
 
-
 }
+
+@media only screen and (max-width: 600px) {
+	.aboutus .about-section {
+	  margin: 20px 10px 0 10px;
+	  font-size: 14px;
+	}
+  }
