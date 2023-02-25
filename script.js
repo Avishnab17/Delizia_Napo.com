@@ -61,6 +61,8 @@ function bg1(){
     p.style.color = "#B03A2E";})
     document.querySelectorAll(".headergal h1").forEach(function(p) {
       p.style.borderBottom = "3px solid #B03A2E";});
+      document.querySelectorAll("footer").forEach(function(p) {
+        p.style.backgroundColor = "#DFBEA0";})
 }
 function bg3(){
     document.querySelector("body").style.background="url(images/dark.jpg)center center / cover"
