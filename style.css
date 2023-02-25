@@ -648,10 +648,17 @@ span-register{
 	margin-top: -250px;
 }
 
-.contsite img{
-	margin-top: -100px;
-	margin-left: 30px;
-}
+.contsite {
+	max-width: 100%;
+	overflow: hidden;
+	border-radius: 8px;
+	box-shadow: 30px 25px 30px rgba(30,40,200,0.3);
+  }
+  
+  .contsite img {
+	width: 100%;
+	height: auto;
+  }
 
 /*------------------ Contact us-------------------------------*/
 .contactus .contact{
@@ -766,6 +773,14 @@ span-register{
 	margin-top: 40%;
 	margin-left:490px;
 }
+.contsite {
+    margin-top: 50px;
+  }
+  
+  .contsite img {
+    max-width: 100%;
+    height: auto;
+  }
 
 }
 
