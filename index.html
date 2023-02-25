@@ -483,6 +483,22 @@
 
 						
 						<input type="checkbox" class="check-register-box">
+
+						<div class="dropdown"><br>
+							<label for="Explevel">Select your experience level:</label>
+							<select name="Explevel" id="Explevel">
+								<option value="Beginner">Beginner</option>
+								<option value="Average">Average</option>
+								<option value="Expert">Expert</option>
+							</select><br><br>
+						</div>
+						
+						
+						
+
+						<label for="description">Describe your baking experience:</label>
+						<textarea id="description" name="description" rows="6" cols="50"></textarea>
+
 					
 						<button type="submit" class="register-btn"  onclick="submitForm()" >Register</button>
 					
@@ -490,22 +506,7 @@
 					</form>
 				</div>
 	
-				<div class="exp-box">
-					<div class="dropdown"><br>
-						<label for="Explevel">Select your experience level:</label>
-						<select name="Explevel" id="Explevel">
-							<option value="Beginner">Beginner</option>
-							<option value="Average">Average</option>
-							<option value="Expert">Expert</option>
-						</select><br><br>
-					</div>
-					<label for="w3review">Describe your baking experience: </label>
-					<form action="/action_page.php" method="get" id="nameform" >
-						<textarea id="w3review" name="w3review" rows="6" cols="45" required></textarea>
-					</form>
-					  
-					<button type="submit" form="nameform" value="Submit" >Submit</button>
-				</div>	
+					
 
 	  
 			</div>

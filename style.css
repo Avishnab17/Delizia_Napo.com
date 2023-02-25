@@ -450,10 +450,10 @@ footer{
 
 .joinus .joining .form-box{
 	width: 445px;
-	height: 700px;
+	height: 1000px;
 	position: relative;
 	margin: 6% auto;
-    margin-left: 135px;
+    margin-left: 400px;
     margin-top: -220px;
 	background:#DFBEA0;
 	padding: 5px;
@@ -555,7 +555,7 @@ footer{
     position: relative;
 	background: #F2D5BA;
 	border: 0;
-	bottom: 40px;
+	bottom: 15px;
 	outline: none;
 	left: 60px;
 	color: #B03A2E;
@@ -574,22 +574,6 @@ footer{
 	
 }
 
-/*--- join us explosion box---*/
-.joinus .joining .exp-box{
-	width: 500px;
-	height: 300px;
-	border-radius: 4px;
-	position: relative;
-	bottom: 600px;
-	left: 675px;
-	background:#DFBEA0;
-	padding: 5px;
-	overflow: hidden; /*------hide register or login---*/
-}
-
-.joinus .joining .exp-box .dropdown{
-	color:grey;
-}
 
 p{
 	color: brown;
