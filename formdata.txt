@@ -1,2 +1,10 @@
-name: Vaishnavi
-email:dookheetvaishnav@gmail.com
+Name: Avishna
+Email: avishna@gmail.com
+Name: Yashi
+Email: yashi@gmail.com
+Name: Vaishnavi
+Email: vaishnavi@gmail.com
+Name: avish
+Email: avi@gmail.com
+Name: Abhi
+Email: abhi@gmail.com
