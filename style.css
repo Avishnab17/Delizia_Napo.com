@@ -32,8 +32,8 @@ body{
 .bg-image .bg-change
 { 
 	position: relative;
-	top: -500px;
-    left: 840px;
+	top: -550px;
+    left: 5px;
     width: 60px;
     height: 60px;
     overflow:hidden;
