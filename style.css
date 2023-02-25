@@ -450,11 +450,11 @@ footer{
 
 .joinus .joining .form-box{
 	width: 445px;
-	height: 700px;
+	height: 590px;
 	position: relative;
 	margin: 6% auto;
     margin-left: 135px;
-    margin-top: -230px;
+    margin-top: -220px;
 	background:#DFBEA0;
 	padding: 5px;
 	overflow: hidden; /*-- hide register or login */
@@ -498,7 +498,7 @@ footer{
 
 .joinus .joining .form-box .input-group{
 	top: 150px;
-	margin-top: -20px;
+	margin-top: -30px;
 	position: absolute;
 	width: 280px;
 	transition: .5s;
@@ -513,6 +513,13 @@ footer{
 	border-bottom: 1px solid #999;
 	outline: none;
 	background: transparent;  
+}
+
+.joinus .joining .form-box h1{
+	font-size:  10px;
+	color: #B03A2E;
+
+
 }
 
 /*--- below log-in botton*/
@@ -550,10 +557,11 @@ footer{
 	border: 0;
 	bottom: -20px;
 	outline: none;
-	left: 50px;
+	left: -10px;
 	color: #B03A2E;
 	font-size: 20px;
 	font-family: cursive;
+	
 }
 
 .joinus .joining .form-box .input-group .check-log-box{
@@ -561,8 +569,9 @@ footer{
 }
 
 .joinus .joining .form-box .input-group .check-register-box{
-	margin: 20px 10px 30px 0;
-	margin-bottom: 10;
+	margin-right: 90px;
+	margin-top: -52px;
+	
 }
 
 /*--- join us explosion box---*/
