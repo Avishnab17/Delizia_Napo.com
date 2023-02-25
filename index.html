@@ -22,6 +22,12 @@
 </head>
 
 <body>
+
+
+
+
+
+
 	<script src="script.js"></script>
 	<div class="bg-image">
 		<div class="bg-change" onclick="bg2()"><img src ="images/gradient.jpeg"/> </div>
@@ -393,14 +399,15 @@
 						<button type="submit" class="log-btn">Log in</button>
 					</form>
 					<form id="register" class="input-group"  method="POST">
-						
-						<input type="text" name="name" class="input-field" placeholder="Name" id="name" required>
-
-						<input type="number" name="age" class="input-field" placeholder="Age" id="age" required>
+						<input type="text" class="input-field" placeholder="Name"  required>
+						<input type="number" class="input-field" placeholder="Age" required>
 						
 						<label class="emailBox">
 							<input type="email" name="email" class="input-field" id="email" placeholder="Email" required>
+							
 							<span class="emailText"></span>
+							
+							
 					    </label>
 
 					    <label class="passBox">
@@ -423,7 +430,6 @@
 						<input type="checkbox" class="check-register-box"><span-register>I agree to the terms and conditions</span-register>
 					
 						<button type="submit" class="register-btn">Register</button>
-						<button type="button" onclick="saveToFile()">Save to File</button>
 					</form>
 				</div>
 	
@@ -440,8 +446,21 @@
 					<form action="/action_page.php" method="get" id="nameform" >
 						<textarea id="w3review" name="w3review" rows="6" cols="45"></textarea>
 					</form>
+
+
+		
+					  
 					<button type="submit" form="nameform" value="Submit">Submit</button>
-				</div>		
+				</div>	
+				
+				<!---<form>
+					<label for="name">Name:</label>
+					<input type="text" id="name" name="name"><br><br>
+					<label for="email">Email:</label>
+					<input type="email" id="email" name="email"><br><br>
+					<button type="button" onclick="saveToFile()">Save to File</button>
+				  </form>--->
+			
 			</div>
 			<script>
 				var x = document.getElementById("login");
@@ -466,7 +485,7 @@
 			<script>
 				const email = document.getElementById("email");
 				const password = document.getElementById("password");
-	
+
 				email.addEventListener('input',()=>{
 					  const emailBox = document.querySelector('.emailBox');
 					  const emailText = document.querySelector('.emailText');
@@ -516,6 +535,8 @@
 				}
 		    </script>
 
+
+
 		</div>
 		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 		<footer>
@@ -525,3 +546,6 @@
 </body>
 </html>
 
+
+
+  
