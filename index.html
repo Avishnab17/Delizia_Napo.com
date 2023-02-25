@@ -541,31 +541,36 @@
 							passText.innerHTML = "Your password must be at least 6 characters as well as contain at least one uppercase, one lowercase, and one number."; 
 					  }
 				});
-				function saveToFile() {
-					var name = document.getElementById("name").value;
-					var email = document.getElementById("email").value;
-					var data = "Name: " + name + "\nEmail: " + email + "\n";
-					var file = new Blob([data], {type: 'text/plain'});
+				
+				function saveToFile() 
+				{
+  					var name = document.getElementById("name").value;
+  					var email = document.getElementById("email").value;
+  					var data = "Name: " + name + "\nEmail: " + email + "\n";
 
-					var reader = new FileReader();
-					reader.onload = function(event) {
-						var content = event.target.result;
-						content += data;
-						var newFile = new Blob([content], {type: 'text/plain'});
+ 				 	// Check if file exists in the local storage
+ 				 	var existingData = localStorage.getItem("formData");
+ 					if (existingData) 
+					{
 
-						var a = document.createElement("a");
-						var url = URL.createObjectURL(newFile);
-						a.href = url;
-						a.download = "formdata.txt";
-						document.body.appendChild(a);
-						a.click();
-						setTimeout(function() {
-							document.body.removeChild(a);
-							window.URL.revokeObjectURL(url);
-						}, 0);
-					};
+ 			     		data = existingData + data;
+ 				 	}
 
-					reader.readAsText(file);
+  					// Save data to local storage
+ 				 	localStorage.setItem("formData", data);
+
+  					// Download data as a text file
+  					var file = new Blob([data], {type: 'text/plain'});
+  					var a = document.createElement("a");
+ 					var url = URL.createObjectURL(file);
+  					a.href = url;
+  					a.download = "formdata.txt";
+  					document.body.appendChild(a);
+  					a.click();
+  					setTimeout(function() {
+   			   	 	document.body.removeChild(a);
+    				window.URL.revokeObjectURL(url);
+ 					}, 0);
 				}
 
 		    </script>
