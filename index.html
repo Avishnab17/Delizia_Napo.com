@@ -449,6 +449,9 @@
 						<input type="text" name="name" class="input-field" placeholder="Name" id="name" required>
 
 						<input type="number" name="age" class="input-field" placeholder="Age" id="age" required>
+
+						<input type="tel" name="phone_number" class="input-field" id="phone_number" placeholder="Phone Number:xxx-xxx-xxxx" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+						<h1>The phone number should be as indicated</h1>
 						
 						<label class="emailBox">
 							<input type="email" name="email" class="input-field" id="email" placeholder="Email" required>
@@ -478,9 +481,8 @@
 							
 						</div>
 
-						<input type="tel" name="phone_number" class="input-field" id="phone_number" placeholder="Phone Number:xxx-xxx-xxxx" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
-						<h1>The phone number should be as indicated</h1>
-						<input type="checkbox" class="check-register-box"><span-register>I agree to the terms and conditions</span-register>
+						
+						<input type="checkbox" class="check-register-box">
 					
 						<button type="submit" class="register-btn"  onclick="submitForm()" >Register</button>
 					
