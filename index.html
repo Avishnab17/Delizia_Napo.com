@@ -284,23 +284,42 @@
 					Yashi (yashi@gmail.com)
 				</ul>
 			</div>
-			
 			<script>
-			// Retrieve the stored user information
-			var userStr = localStorage.getItem("user");
-			
-			// Check if user information is present in local storage
-			if (userStr) {
-				// Convert the user information string to an object
-				var user = JSON.parse(userStr);
-			
-				// Append the user information to the registered members list
-				var membersList = document.getElementById("members-list");
-				var memberItem = document.createElement("li");
-				memberItem.innerHTML = user.name + " (" + user.email + ")";
-				membersList.appendChild(memberItem);
-			}
+				// Retrieve the stored user information
+				var userStr = localStorage.getItem("user");
+				
+				// Check if user information is present in local storage
+				if (userStr) {
+					// Convert the user information string to an object
+					var user = JSON.parse(userStr);
+					
+					// Retrieve the stored members information
+					var membersStr = localStorage.getItem("members");
+					var members = [];
+					
+					// Check if members information is present in local storage
+					if (membersStr) {
+						// Convert the members information string to an array
+						members = JSON.parse(membersStr);
+					}
+					
+					// Add the new member to the members array
+					members.push(user);
+					
+					// Store the updated members array in local storage
+					localStorage.setItem("members", JSON.stringify(members));
+					
+					// Append the members list to the registered members list
+					var membersList = document.getElementById("members-list");
+					for (var i = 0; i < members.length; i++) {
+						var memberItem = document.createElement("li");
+						memberItem.innerHTML = members[i].name + " (" + members[i].email + ")";
+						membersList.appendChild(memberItem);
+					}
+				}
 			</script>
+			
+
 			</div>
 			<div class="cont2">
           			<img class="img-fluid1" src="images\group.jpg" height="450">
