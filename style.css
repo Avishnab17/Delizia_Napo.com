@@ -772,6 +772,12 @@ span-register{
 	transition: 0.6s ease;
 	font-size: 13px;
    }
+   .cont2 {
+	width: 90%;
+	height: 300px;
+	margin-top: 200px;
+	margin-left:200px;
+}
 
 
 }
