@@ -289,62 +289,69 @@ section{
  		transform: translateX(-300%);
  	}
  }
-
- .cont3{
+ .cont3 {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	text-align: center;
 	margin: 40px 20px 0 20px;
-}
-
-.cont3 .headergal{
-	width:50%;
+  }
+  
+  .cont3 .headergal {
+	width: 50%;
 	padding-bottom: 50px;
-}
-
-.cont3 .headergal h1{
+  }
+  
+  .cont3 .headergal h1 {
 	font-size: 3em;
 	font-weight: bolder;
 	border-bottom: 3px solid #B03A2E;
 	padding-bottom: 10px;
 	color: #B03A2E;
 	margin-top: -250px;
-}
-
-.cont3 .headergal h1 span{
+  }
+  
+  .cont3 .headergal h1 span {
 	font-weight: 10;
 	color: #B03A2E;
 	margin-top: -250px;
-}
-
-.cont3 .box{
+  }
+  
+  .cont3 .box {
 	display: flex;
-    flex-direction: row;
+	flex-direction: row;
 	justify-content: space-between;
-	flex-basis: 25%
-}
-
-.cont3 .box .napogal{
-	display:flex;
-    flex-direction: column;
-	flex-wrap:wrap;
-    width: 32.5%;
-}
-
-.cont3 .box .napogal img{	
-    width: 100%;
-    padding-bottom: 165px;
-    border-radius: 5px;
-    margin-top: -150px;
+	flex-basis: 25%;
+  }
+  
+  .cont3 .box .napogal {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	width: 32.5%;
+  }
+  
+  .cont3 .box .napogal img {
+	width: 100%;
+	padding-bottom: 165px;
+	border-radius: 5px;
+	margin-top: -150px;
 	object-fit: cover;
 	min-width: 300px; /* Sets the minimum width of the image to 300 pixels */
-    min-height: 200px; /* Sets the minimum height of the image to 200 pixels */
-}
-.napogal{
+	min-height: 200px; /* Sets the minimum height of the image to 200 pixels */
+	transition: transform 0.8s;
+	transform-style: preserve-3d;
+  }
+  
+  .napogal {
 	position: relative;
-}
+  }
+  
+  .cont3 .box .napogal:hover img {
+	transform: rotateY(180deg);
+  }
+  
 /*-------------------------------About us-----------------------------*/
  .cont2 { 
  	width:80vmin;
