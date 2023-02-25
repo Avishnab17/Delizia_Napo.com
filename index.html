@@ -443,7 +443,7 @@
 					</form>
 
 										  
-					<form onsubmit="return confirmInfo()" id="register" class="input-group"  method="POST">
+					<form id="register" class="input-group"  method="POST">
 						
 						<input type="text" name="name" class="input-field" placeholder="Name" id="name" required>
 
@@ -481,7 +481,7 @@
 						<p>The phone number should be in the format of "xxx-xxx-xxxx" </p>
 						<input type="checkbox" class="check-register-box"><span-register>I agree to the terms and conditions</span-register>
 					
-						<button type="submit" class="register-btn"  onclick="confirmInfo(),registerUser(),saveToFile()" >Register</button>
+						<button type="submit" class="register-btn"  onclick="submitForm()" >Register</button>
 					
 			
 					</form>
@@ -519,6 +519,22 @@
 				  var message = "Please confirm your information:\n\nName: " + name +"\nAge: " +age + "\nEmail: " + email + "\nPassword: " 
 				  + password + "\nGender: "+ gender+ "\nPhone Number: " + phone_number;
 				  return confirm(message);
+				  		  
+				}
+
+				function submitForm() {
+					var name = document.getElementById("name").value;
+					var email = document.getElementById("email").value;
+
+					if (name === "" || email === "") {
+						alert("Please fill in all fields.");
+						return false;
+					} else {
+						confirmInfo();
+                        registerUser();		
+						return true;
+					}
+					
 				}
 				</script>
 
@@ -619,6 +635,7 @@
 				var user = { name: name, email: email };
 				localStorage.setItem("user", JSON.stringify(user));
 				alert("User registered successfully!");
+				saveToFile();
 				}
 				</script>		
 			
